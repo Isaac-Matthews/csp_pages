@@ -1,9 +1,38 @@
 <!DOCTYPE html>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none'; style-src 'unsafe-inline';">
+<style>
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
 <html>
 <body>
 
 <h1>Front Page</h1>
+<div class="vertical-menu">
+  <a href="index.html" class="active">Home</a>
+  <a href="comment_box.html">Buttons</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <a href="#">Link 4</a>
+</div>
 <p>Dog related content<p>
  <img src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/dogs_1280p_0.jpg?itok=cnRk0HYq" alt="2 dogs" width=300>
 <p>Cat related content<p>
