@@ -1,0 +1,1 @@
+Header set Content-Security-Policy "default-src 'self'; script-src 'self'; img-src https://*; child-src 'none'; report-uri /cspjson;"
