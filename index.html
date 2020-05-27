@@ -1,41 +1,20 @@
 <!DOCTYPE html>
 <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none'; style-src 'unsafe-inline'; report-uri /cspjson;"> -->
-<style>
-.vertical-menu {
-  width: 200px;
-}
-
-.vertical-menu a {
-  background-color: #eee;
-  color: black;
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-}
-
-.vertical-menu a:hover {
-  background-color: #ccc;
-}
-
-.vertical-menu a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-</style>
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
 <body>
 
 <h1>Front Page</h1>
 <div class="vertical-menu">
   <a href="index.html" class="active">Home</a>
   <a href="comment_box.html">Buttons</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
-  <a href="#">Link 4</a>
+  <a href="deprecated.html">Deprecated</a>
 </div>
 <p>Dog related content<p>
  <img src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/dogs_1280p_0.jpg?itok=cnRk0HYq" alt="2 dogs" width=300>
-<p>Cat related content<p>
+<p style="color:red;font-size:100px;">Cat related content<p>
  <img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/reference_guide/cats_and_excessive_meowing_ref_guide/1800x1200_cats_and_excessive_meowing_ref_guide.jpg" alt="cat" width=300>
 </body>
 </html>
